@@ -158,7 +158,6 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
         </a>
       </li><!-- End Blank Page Nav -->
 
