@@ -3,8 +3,6 @@ include "koneksi.php";
 $id = $_GET['id'];
 $query = mysqli_query($conn, "SELECT * FROM products WHERE id='$id'");
 $hasil = mysqli_fetch_array($query);
-$kd_produk = $huruf . sprintf("%03s", $urutan);
-
 if (isset($_POST['update'])) {
 
     $nm_produk  = $_POST['nm_produk'];
@@ -207,27 +205,31 @@ if (isset($_POST['update'])) {
                 </ol>
             </nav>
         </div><!-- End Page Title -->
-        <div class="row">
-            <div class="col-lg-6">
+ <section class="section">
+            <div class="row">
 
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Tambah Produk</h5>
+                <div class="col-lg-6">
 
-                        <form class="row g-3" method="post" enctype="multipart/form-data">
-                            <div class="col-12">
-                                <label for="kd_produk" class="form-label">Kode Produk</label>
-                                <input type="text" class="form-control" id="kd_produk" name="kd_produk" value="<?php echo $kd_produk; ?>" readonly>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Edit Produk</h5>
 
-                            <div class="col-12">
-                                <label for="nm_produk" class="form-label">Nama Produk</label>
-                                <input type="text" class="form-control" id="nm_produk" name="nm_produk" value="<?php echo $hasil['product_name']; ?>" required>
-                            </div>
+                            <form class="row g-3" method="post" enctype="multipart/form-data">
+                                <div class="col-12">
+                                    <label for="kd_produk" class="form-label">Kode Produk</label>
+                                    <input type="text" class="form-control" id="kd_produk" name="kd_produk" value="<?php echo $hasil['product_code']; ?>" readonly>
+                                </div>
 
-                            <div class="col-12">
-                                <label for="stok" class="form-label">Stok</label>
-                                <input type="number" class="form-control" id="stok" name="stok" value="<?php echo $hasil['stock']; ?>" required>
+                                <div class="col-12">
+                                    <label for="nm_produk" class="form-label">Nama Produk</label>
+                                    <input type="text" class="form-control" id="nm_produk" name="nm_produk" value="<?php echo $hasil['product_name']; ?>" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="stok" class="form-label">Stok</label>
+                                    <input type="number" class="form-control" id="stok" name="stok" value="<?php echo $hasil['stock']; ?>" required>
+                                </div>
+
                                 <div class="col-12">
                                     <label for="min_stok" class="form-label">Minimal Stok</label>
                                     <input type="number" class="form-control" id="min_stok" name="min_stok" value="<?php echo $hasil['min_stock']; ?>" required>
@@ -250,6 +252,7 @@ if (isset($_POST['update'])) {
                                         ?>
                                     </select>
                                 </div>
+
                                 <div class="col-12">
                                     <label class="form-label">Gambar Lama</label><br>
                                     <img src="produk_img/<?php echo $hasil['gambar']; ?>" width="80">
@@ -267,16 +270,13 @@ if (isset($_POST['update'])) {
                                     <button type="reset" class="btn btn-secondary">Reset</button>
                                     <button type="submit" class="btn btn-success" name="update">Update</button>
                                 </div>
-                        </form>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <button type="reset" class="btn btn-secondary">Reset</button>
+                            </form>
+
                         </div>
-                        </form>
                     </div>
+
                 </div>
             </div>
-        </div>
         </section>
 
     </main>

@@ -23,3 +23,4 @@ if ($hapus) {
     echo "<script>alert('Data gagal dihapus!');</script>";
     header("refresh:0, produk.php");
 }
+?>
