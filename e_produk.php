@@ -1,4 +1,14 @@
 <?php
+session_start();
+include "koneksi.php";
+
+// Cek apakah user sudah login
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit;
+}
+?>
+<?php
 include "koneksi.php";
 $id = $_GET['id'];
 $query = mysqli_query($conn, "SELECT * FROM products WHERE id='$id'");
@@ -56,7 +66,7 @@ if (isset($_POST['update'])) {
         echo "<script>alert('Data gagal diubah!')</script>";
         header("refresh:0, produk.php");
     }
-}   
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -100,57 +110,25 @@ if (isset($_POST['update'])) {
         </div>
         <nav class="header-nav ms-auto">
             <ul class="d-flex align-items-center">
-
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>Kevin Anderson</h6>
-                            <span>Web Designer</span>
+                            <h6><?php echo isset($_SESSION['name']) ? $_SESSION['name'] : 'User'; ?></h6>
+                            <span><?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Role'; ?></span>
                         </li>
                         <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                                <i class="bi bi-person"></i>
-                                <span>My Profile</span>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
+                            <hr class="dropdown-divider" />
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                                <i class="bi bi-gear"></i>
-                                <span>Account Settings</span>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                                <i class="bi bi-question-circle"></i>
-                                <span>Need Help?</span>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" href="logout.php">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Sign Out</span>
                             </a>
                         </li>
-
                     </ul>
                 </li>
             </ul>
@@ -205,7 +183,7 @@ if (isset($_POST['update'])) {
                 </ol>
             </nav>
         </div><!-- End Page Title -->
- <section class="section">
+        <section class="section">
             <div class="row">
 
                 <div class="col-lg-6">
@@ -282,10 +260,10 @@ if (isset($_POST['update'])) {
     </main>
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>Nama Sistem</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Inventory Barang</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            Designed by <a href="">Nama Kalian</a>
+            Designed by <a href="">Galang Rangga</a>
         </div>
     </footer><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
