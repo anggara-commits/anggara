@@ -180,7 +180,6 @@ if (isset($_POST['submit'])) {
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
         </a>
       </li><!-- End Blank Page Nav -->
 
@@ -191,12 +190,12 @@ if (isset($_POST['submit'])) {
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Manajemen Stok</h1>
+      <h1>Stock Management</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-          <li class="breadcrumb-item">Data Produk</li>
-          <li class="breadcrumb-item active">Manajemen Stok</li>
+          <li class="breadcrumb-item">Product Data</li>
+          <li class="breadcrumb-item active">Stock Management</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

@@ -143,11 +143,11 @@ if (!isset($_SESSION["login"])) {
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Kategori Produk</h1>
+      <h1>Product Category</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-          <li class="breadcrumb-item active">Kategori Produk</li>
+          <li class="breadcrumb-item active">Product Category</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
