@@ -116,28 +116,28 @@ if (isset($_POST['update'])) {
             <li class="nav-item">
                 <a class="nav-link" href="kategori_produk.php">
                     <i class="bi bi-person"></i>
-                    <span>Kategori Produk</span>
+                    <span>Product Category</span>
                 </a>
             </li><!-- End Profile Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="produk.php">
                     <i class="bi bi-question-circle"></i>
-                    <span>Data_Produk</span>
+                    <span>Product Data</span>
                 </a>
             </li><!-- End F.A.Q Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="laporan.php">
                     <i class="bi bi-envelope"></i>
-                    <span>Laporan</span>
+                    <span>Report</span>
                 </a>
             </li><!-- End Contact Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="users.php">
                     <i class="bi bi-card-list"></i>
-                    <span>Manajemen User</span>
+                    <span>User Management</span>
                 </a>
             </li><!-- End Register Page Nav -->
         </ul>
@@ -147,11 +147,11 @@ if (isset($_POST['update'])) {
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Kategori Produk</h1>
+            <h1>Product Category</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item">Kategori Produk</li>
+                    <li class="breadcrumb-item">Product Category</li>
                     <li class="breadcrumb-item active">Edit</li>
                 </ol>
             </nav>
@@ -162,16 +162,16 @@ if (isset($_POST['update'])) {
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Edit Kategori Produk</h5>
+                            <h5 class="card-title">Edit Product Category</h5>
 
                             <!-- Vertical Form -->
                             <form class="row g-3" method="post">
                                 <div class="col-12">
-                                    <label for="kd_kat" class="form-label">Kode Kategori</label>
+                                    <label for="kd_kat" class="form-label">Category Code</label>
                                     <input type="text" class="form-control" id="kd_kat" name="kd_kat" value="<?php echo $hasil['kd_kat']; ?>" readonly>
                                 </div>
                                 <div class="col-12">
-                                    <label for="nm_kat" class="form-label">Nama Kategori</label>
+                                    <label for="nm_kat" class="form-label">Category Name</label>
                                     <input type="text" class="form-control" id="nm_kat" name="nm_kat" value="<?php echo $hasil['category_name']; ?>" required>
                                 </div>
                                 <div class="text-center">

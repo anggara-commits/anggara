@@ -45,7 +45,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/artguru.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -72,7 +72,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/artguru.png" alt="">
         <span class="d-none d-lg-block">inventory barang</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -82,7 +82,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
       <ul class="d-flex align-items-center">
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+            <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
           </a>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -112,7 +112,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.php">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -120,46 +120,31 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="kategori_produk.php">
-          <i class="bi bi-person"></i>
+          <i class="bi bi-tags"></i>
           <span>Product Category</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="produk.php">
-          <i class="bi bi-question-circle"></i>
+          <i class="bi bi-box-seam"></i>
           <span>Product Data</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="laporan.php">
-          <i class="bi bi-envelope"></i>
+        <a class="nav-link" href="laporan.php">
+          <i class="bi bi-bar-chart-line"></i>
           <span>Report</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="users.php">
-          <i class="bi bi-card-list"></i>
-          <span>Manajemen User</span>
+          <i class="bi bi-people"></i>
+          <span>User Management</span>
         </a>
       </li><!-- End Register Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-        </a>
-      </li><!-- End Login Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-        </a>
-      </li><!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
-        </a>
-      </li><!-- End Blank Page Nav -->
 
     </ul>
 
@@ -171,8 +156,8 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
       <h1>Report</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
+          <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+          <li class="breadcrumb-item active">Report</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

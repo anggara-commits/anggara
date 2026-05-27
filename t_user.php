@@ -57,7 +57,7 @@ if (isset($_POST['simpan'])) {
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/artguru.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -85,7 +85,7 @@ if (isset($_POST['simpan'])) {
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.php" class="logo d-flex align-items-center">
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/artguru.png" alt="">
                 <span class="d-none d-lg-block">Inventory Barang</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -95,7 +95,7 @@ if (isset($_POST['simpan'])) {
             <ul class="d-flex align-items-center">
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+                        <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
@@ -177,64 +177,64 @@ if (isset($_POST['simpan'])) {
         <section class="section">
             <div class="row">
                 <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tambah User</h5>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Tambah User</h5>
+                            <form class="row g-3" method="post">
 
-                        <form class="row g-3" method="post">
+                                <div class="col-12">
+                                    <label for="name" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
 
-                            <div class="col-12">
-                                <label for="name" class="form-label">Nama</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
 
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
+                                <div class="col-12">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                </div>
 
-                            <div class="col-12">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password">
-                            </div>
+                                <div class="col-12">
+                                    <label for="role" class="form-label">Role</label>
+                                    <select class="form-control" name="role" required>
+                                        <option value="">-- Pilih Role --</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="staff">Staff</option>
+                                    </select>
+                                </div>
 
-                            <div class="col-12">
-                                <label for="role" class="form-label">Role</label>
-                                <select class="form-control" name="role" required>
-                                    <option value="">-- Pilih Role --</option>
-                                    <option value="admin">Admin</option>
-                                    <option value="staff">Staff</option>
-                                </select>
-                            </div>
+                                <div class="col-12">
+                                    <label for="is_active" class="form-label">Status</label>
+                                    <select class="form-control" name="is_active">
+                                        <option value="1">Aktif</option>
+                                        <option value="0">Nonaktif</option>
+                                    </select>
+                                </div>
 
-                            <div class="col-12">
-                                <label for="is_active" class="form-label">Status</label>
-                                <select class="form-control" name="is_active">
-                                    <option value="1">Aktif</option>
-                                    <option value="0">Nonaktif</option>
-                                </select>
-                            </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-warning">
+                                        <a href="users.php" style="color: black; text-decoration:none;">
+                                            Kembali
+                                        </a>
+                                    </button>
 
-                            <div class="text-center">
-                                <button type="button" class="btn btn-warning">
-                                    <a href="users.php" style="color: black; text-decoration:none;">
-                                        Kembali
-                                    </a>
-                                </button>
+                                    <button type="reset" class="btn btn-secondary">
+                                        Reset
+                                    </button>
 
-                                <button type="reset" class="btn btn-secondary">
-                                    Reset
-                                </button>
+                                    <button type="submit" class="btn btn-success" name="simpan">
+                                        Simpan
+                                    </button>
+                                </div>
 
-                                <button type="submit" class="btn btn-success" name="simpan">
-                                    Simpan
-                                </button>
-                            </div>
-
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
     </main><!-- End #main -->

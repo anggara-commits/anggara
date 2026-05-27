@@ -20,7 +20,7 @@ if (!isset($_SESSION["login"])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/artguru.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -47,7 +47,7 @@ if (!isset($_SESSION["login"])) {
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/artguru.png" alt="">
         <span class="d-none d-lg-block">inventory barang</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -57,7 +57,7 @@ if (!isset($_SESSION["login"])) {
       <ul class="d-flex align-items-center">
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+            <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
           </a>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -87,7 +87,7 @@ if (!isset($_SESSION["login"])) {
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.php">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -95,46 +95,31 @@ if (!isset($_SESSION["login"])) {
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="kategori_produk.php">
-          <i class="bi bi-person"></i>
+          <i class="bi bi-tags"></i>
           <span>Product Category</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="produk.php">
-          <i class="bi bi-question-circle"></i>
+        <a class="nav-link" href="produk.php">
+          <i class="bi bi-box-seam"></i>
           <span>Product Data</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="laporan.php">
-          <i class="bi bi-envelope"></i>
+          <i class="bi bi-bar-chart-line"></i>
           <span>Report</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="users.php">
-          <i class="bi bi-card-list"></i>
-          <span>Manajemen User</span>
+          <i class="bi bi-people"></i>
+          <span>User Management</span>
         </a>
       </li><!-- End Register Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-        </a>
-      </li><!-- End Login Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-        </a>
-      </li><!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-blank.html">
-        </a>
-      </li><!-- End Blank Page Nav -->
 
     </ul>
 
@@ -157,8 +142,8 @@ if (!isset($_SESSION["login"])) {
 
         <div class="card">
           <div class="card-body mt-3">
-            <a href="t_produk.php" class="btn btn-primary">Tambah Data</a>
-            <a href="stok.php" class="btn btn-dark">Stok</a>
+            <a href="t_produk.php" class="btn btn-primary">Add Data</a>
+            <a href="stok.php" class="btn btn-dark">Stock</a>
           </div>
         </div>
       </div>
@@ -175,13 +160,13 @@ if (!isset($_SESSION["login"])) {
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Kode Produk</th>
-                    <th scope="col">Nama Produk</th>
-                    <th scope="col">Kategori</th>
-                    <th scope="col">Stok</th>
-                    <th scope="col">Harga</th>
-                    <th scope="col">Gambar</th>
-                    <th scope="col">Aksi</th>
+                    <th scope="col">Product Code</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -206,7 +191,7 @@ if (!isset($_SESSION["login"])) {
                       </td>
                       <td>
                         <a href="e_produk.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
-                        <a href="h_produk.php?id=<?php echo $data['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data?')">Hapus</a>
+                        <a href="h_produk.php?id=<?php echo $data['id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this data?')">Delete</a>
                       </td>
                     </tr>
                   <?php } ?>

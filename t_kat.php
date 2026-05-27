@@ -48,7 +48,7 @@ if (isset($_POST['simpan'])) {
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/artguru.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -74,7 +74,7 @@ if (isset($_POST['simpan'])) {
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.php" class="logo d-flex align-items-center">
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/artguru.png" alt="">
                 <span class="d-none d-lg-block">inventory barang</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -84,7 +84,7 @@ if (isset($_POST['simpan'])) {
             <ul class="d-flex align-items-center">
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+                        <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
@@ -184,6 +184,30 @@ if (isset($_POST['simpan'])) {
                 <div class="col-lg-6">
 
                     <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Product Category</h5>
+
+                            <!-- Vertical Form -->
+                            <form class="row g-3" method="post">
+                                <div class="col-12">
+                                    <label for="kd_kat" class="form-label">Category Code</label>
+                                    <input type="text" class="form-control" id="kd_kat" name="kd_kat" value="<?php echo $kd_kat; ?>" readonly>
+                                </div>
+                                <div class="col-12">
+                                    <label for="nm_kat" class="form-label">Category Name</label>
+                                    <input type="text" class="form-control" id="nm_kat" name="nm_kat" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-warning"><a href="kategori_produk.php" style="color: black; text-decoration:none;">Kembali</a></button>
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                    <button type="submit" class="btn btn-success" name="simpan">Simpan</button>
+                                </div>
+                            </form><!-- Vertical Form -->
+
+                        </div>
+                    </div>
+
+                    <div class="card">
 
                     </div>
                 </div>
@@ -191,44 +215,6 @@ if (isset($_POST['simpan'])) {
                 <div class="card">
 
                 </div>
-            </div>
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Tambah Kategori Produk</h5>
-
-                        <!-- Vertical Form -->
-                        <form class="row g-3" method="post">
-                            <div class="col-12">
-                                <label for="kd_kat" class="form-label">Kode Kategori</label>
-                                <input type="text" class="form-control" id="kd_kat" name="kd_kat" value="<?php echo $kd_kat; ?>" readonly>
-                            </div>
-                            <div class="col-12">
-                                <label for="nm_kat" class="form-label">Nama Kategori</label>
-                                <input type="text" class="form-control" id="nm_kat" name="nm_kat" required>
-                            </div>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-warning"><a href="kategori_produk.php" style="color: black; text-decoration:none;">Kembali</a></button>
-                                <button type="reset" class="btn btn-secondary">Reset</button>
-                                <button type="submit" class="btn btn-success" name="simpan">Simpan</button>
-                            </div>
-                        </form><!-- Vertical Form -->
-
-                    </div>
-                </div>
-
-                <div class="card">
-
-                </div>
-            </div>
-
-            <div class="card">
-
-            </div>
             </div>
 
             </div>

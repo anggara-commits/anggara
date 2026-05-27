@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/artguru.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -94,7 +94,7 @@ if (isset($_POST['submit'])) {
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/artguru.png" alt="">
         <span class="d-none d-lg-block">inventory barang</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
       <ul class="d-flex align-items-center">
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+            <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
           </a>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -164,7 +164,7 @@ if (isset($_POST['submit'])) {
       <li class="nav-item">
         <a class="nav-link collapsed" href="users.php">
           <i class="bi bi-card-list"></i>
-          <span>Manajemen User</span>
+          <span>User Management</span>
         </a>
       </li><!-- End Register Page Nav -->
 
@@ -206,11 +206,11 @@ if (isset($_POST['submit'])) {
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Manajemen Stok</h5>
+              <h5 class="card-title">Stock Management</h5>
 
               <form method="POST">
                 <div class="mb-3">
-                  <label class="form-label">Pilih Produk</label>
+                  <label class="form-label">Product</label>
                   <select name="product_id" class="form-select" required>
                     <option selected disabled>-- Pilih Produk --</option>
                     <?php
@@ -224,25 +224,25 @@ if (isset($_POST['submit'])) {
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label">Jenis Aksi</label>
+                  <label class="form-label">Action Type</label>
                   <select name="change_type" class="form-select">
-                    <option value="ADD">Tambah Stok</option>
-                    <option value="REDUCE">Kurangi Stok</option>
+                    <option value="ADD">Add Stock</option>
+                    <option value="REDUCE">Reduce Stock</option>
                   </select>
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label">Jumlah</label>
+                  <label class="form-label">Quantity</label>
                   <input type="number" name="qty" class="form-control" required>
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label">Catatan</label>
+                  <label class="form-label">Note</label>
                   <textarea name="note" class="form-control" rows="2"></textarea>
                 </div>
 
                 <button type="submit" name="submit" class="btn btn-primary w-100">
-                  Simpan Perubahan
+                  Save Changes
                 </button>
               </form>
 
@@ -253,15 +253,15 @@ if (isset($_POST['submit'])) {
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Riwayat Stok</h5>
+              <h5 class="card-title">Stock History</h5>
 
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>Tanggal</th>
-                    <th>Produk</th>
-                    <th>Aksi</th>
-                    <th>Qty</th>
+                    <th>Date</th>
+                    <th>Product</th>
+                    <th>Action</th>
+                    <th>Quantity</th>
                     <th>User</th>
                   </tr>
                 </thead>

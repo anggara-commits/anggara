@@ -79,7 +79,7 @@ if (isset($_POST['update'])) {
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/artguru.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -103,7 +103,7 @@ if (isset($_POST['update'])) {
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.php" class="logo d-flex align-items-center">
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/artguru.png" alt="">
                 <span class="d-none d-lg-block">Inventory Barang</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -112,7 +112,7 @@ if (isset($_POST['update'])) {
             <ul class="d-flex align-items-center">
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+                        <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
@@ -147,25 +147,25 @@ if (isset($_POST['update'])) {
             <li class="nav-item">
                 <a class="nav-link collapsed" href="kategori_produk.php">
                     <i class="bi bi-person"></i>
-                    <span>Kategori Produk</span>
+                    <span>Product Category</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="produk.php">
                     <i class="bi bi-question-circle"></i>
-                    <span>Data_Produk</span>
+                    <span>Product Data</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="laporan.php">
                     <i class="bi bi-envelope"></i>
-                    <span>Laporan</span>
+                    <span>Report</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="users.php">
                     <i class="bi bi-card-list"></i>
-                    <span>Manajemen User</span>
+                    <span>User Management</span>
                 </a>
             </li>
         </ul>
@@ -174,11 +174,11 @@ if (isset($_POST['update'])) {
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Data Produk</h1>
+            <h1>Product Data</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item">Data Produk</li>
+                    <li class="breadcrumb-item">Product Data</li>
                     <li class="breadcrumb-item active">Edit</li>
                 </ol>
             </nav>
@@ -190,36 +190,36 @@ if (isset($_POST['update'])) {
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Edit Produk</h5>
+                            <h5 class="card-title">Edit Product</h5>
 
                             <form class="row g-3" method="post" enctype="multipart/form-data">
                                 <div class="col-12">
-                                    <label for="kd_produk" class="form-label">Kode Produk</label>
+                                    <label for="kd_produk" class="form-label">Product Code</label>
                                     <input type="text" class="form-control" id="kd_produk" name="kd_produk" value="<?php echo $hasil['product_code']; ?>" readonly>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="nm_produk" class="form-label">Nama Produk</label>
+                                    <label for="nm_produk" class="form-label">Product Name</label>
                                     <input type="text" class="form-control" id="nm_produk" name="nm_produk" value="<?php echo $hasil['product_name']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="stok" class="form-label">Stok</label>
+                                    <label for="stok" class="form-label">Stock</label>
                                     <input type="number" class="form-control" id="stok" name="stok" value="<?php echo $hasil['stock']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="min_stok" class="form-label">Minimal Stok</label>
+                                    <label for="min_stok" class="form-label">Minimum Stock</label>
                                     <input type="number" class="form-control" id="min_stok" name="min_stok" value="<?php echo $hasil['min_stock']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="harga" class="form-label">Harga</label>
+                                    <label for="harga" class="form-label">Price</label>
                                     <input type="number" class="form-control" id="harga" name="harga" value="<?php echo $hasil['price']; ?>" required>
                                 </div>
 
                                 <div class="col-12">
-                                    <label for="id_kategori" class="form-label">Kategori</label>
+                                    <label for="id_kategori" class="form-label">Category</label>
                                     <select class="form-control" id="id_kategori" name="id_kategori" required>
                                         <?php
                                         $kategori = mysqli_query($conn, "SELECT * FROM categories");

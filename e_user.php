@@ -70,7 +70,7 @@ if (isset($_POST['update'])) {
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/artguru.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -98,7 +98,7 @@ if (isset($_POST['update'])) {
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.php" class="logo d-flex align-items-center">
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/artguru.png" alt="">
                 <span class="d-none d-lg-block">Inventory Barang</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -108,7 +108,7 @@ if (isset($_POST['update'])) {
             <ul class="d-flex align-items-center">
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+                        <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
@@ -147,28 +147,28 @@ if (isset($_POST['update'])) {
             <li class="nav-item">
                 <a class="nav-link collapsed" href="kategori_produk.php">
                     <i class="bi bi-person"></i>
-                    <span>Kategori Produk</span>
+                    <span>Product Category</span>
                 </a>
             </li><!-- End Profile Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="produk.php">
                     <i class="bi bi-question-circle"></i>
-                    <span>Data_Produk</span>
+                    <span>Product Data</span>
                 </a>
             </li><!-- End F.A.Q Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="laporan.php">
                     <i class="bi bi-envelope"></i>
-                    <span>Laporan</span>
+                    <span>Report</span>
                 </a>
             </li><!-- End Contact Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="users.php">
                     <i class="bi bi-card-list"></i>
-                    <span>Manajemen User</span>
+                    <span>User Management</span>
                 </a>
             </li><!-- End Register Page Nav -->
         </ul>
@@ -178,11 +178,11 @@ if (isset($_POST['update'])) {
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Manajemen User</h1>
+            <h1>User Management</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item">Manajemen User</li>
+                    <li class="breadcrumb-item">User Management</li>
                     <li class="breadcrumb-item active">Edit</li>
                 </ol>
             </nav>
@@ -193,7 +193,7 @@ if (isset($_POST['update'])) {
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Vertical Form</h5>
+                            <h5 class="card-title">Edit User</h5>
 
                             <!-- Vertical Form -->
                             <form class="row g-3" method="post">

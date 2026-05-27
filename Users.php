@@ -20,7 +20,7 @@ if (!isset($_SESSION["login"])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/artguru.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -47,7 +47,7 @@ if (!isset($_SESSION["login"])) {
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/artguru.png" alt="">
         <span class="d-none d-lg-block">Inventory Barang</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -58,7 +58,7 @@ if (!isset($_SESSION["login"])) {
       <ul class="d-flex align-items-center">
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" />
+            <img src="assets/img/galang.jpeg" alt="Profile" class="rounded-circle" />
           </a>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -96,7 +96,7 @@ if (!isset($_SESSION["login"])) {
       <li class="nav-item">
         <a class="nav-link collapsed" href="kategori_produk.php">
           <i class="bi bi-tags"></i>
-          <span>Product Categories</span>
+          <span>Product Category</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
@@ -117,7 +117,7 @@ if (!isset($_SESSION["login"])) {
       <li class="nav-item">
         <a class="nav-link " href="user.php">
           <i class="bi bi-people"></i>
-          <span>Manajemen User</span>
+          <span>User Management</span>
         </a>
       </li><!-- End Register Page Nav -->
     </ul>
@@ -127,11 +127,11 @@ if (!isset($_SESSION["login"])) {
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Manajemen User</h1>
+      <h1>User Management</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-          <li class="breadcrumb-item active">Manajemen User</li>
+          <li class="breadcrumb-item active">User Management</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -142,7 +142,7 @@ if (!isset($_SESSION["login"])) {
 
           <div class="card">
             <div class="card-body mt-3">
-              <a href="t_user.php" class="btn btn-primary"> Tambah Data</a>
+              <a href="t_user.php" class="btn btn-primary"> Add Data</a>
             </div>
           </div>
         </div>
