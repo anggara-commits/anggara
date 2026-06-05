@@ -73,7 +73,7 @@ $total_stok_kritis = mysqli_num_rows(mysqli_query(
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/img/artguru.png" alt="">
-        <span class="d-none d-lg-block">inventory barang</span>
+        <span class="d-none d-lg-block">Inventory Barang</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->

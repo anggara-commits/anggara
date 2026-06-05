@@ -134,28 +134,28 @@ if (isset($_POST['simpan'])) {
             <li class="nav-item">
                 <a class="nav-link collapsed" href="kategori_produk.php">
                     <i class="bi bi-person"></i>
-                    <span>Kategori Produk</span>
+                    <span>Product Category</span>
                 </a>
             </li><!-- End Profile Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="produk.php">
                     <i class="bi bi-question-circle"></i>
-                    <span>Data_Produk</span>
+                    <span>Product Data</span>
                 </a>
             </li><!-- End F.A.Q Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="laporan.php">
                     <i class="bi bi-envelope"></i>
-                    <span>Laporan</span>
+                    <span>Report</span>
                 </a>
             </li><!-- End Contact Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="users.php">
                     <i class="bi bi-card-list"></i>
-                    <span>Manajemen User</span>
+                    <span>User Management</span>
                 </a>
             </li><!-- End Register Page Nav -->
         </ul>
@@ -165,12 +165,12 @@ if (isset($_POST['simpan'])) {
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Manajemen User</h1>
+            <h1>User Management</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item">Manajemen User</li>
-                    <li class="breadcrumb-item active">Tambah</li>
+                    <li class="breadcrumb-item">User Management</li>
+                    <li class="breadcrumb-item active">Add User</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -179,7 +179,7 @@ if (isset($_POST['simpan'])) {
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Tambah User</h5>
+                            <h5 class="card-title">Add User</h5>
 
                             <form class="row g-3" method="post">
 
